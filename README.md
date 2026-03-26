@@ -9,16 +9,16 @@ I started Power Notes because most of what I know came from reading between the 
 ## What I work with
 
 **Power Platform**
-Power Apps (canvas & model-driven), Power Automate, Dataverse, Power Pages, Copilot Studio
+Power Apps (mostly model-driven), Power Automate, Dataverse, Power Pages, Copilot Studio
 
 **Azure**
-Azure Functions, Azure DevOps, Azure Service Bus, Logic Apps, API Management
+Azure Functions, Azure DevOps, Azure SQL, Storgae Account
 
 **ALM & Tooling**
-Power Platform CLI, Solution Checker, XrmToolBox, GitHub Actions, Azure Pipelines
+Power Platform CLI, Solution Checker, XrmToolBox, Azure Pipelines
 
 **Languages**
-C# · Power Fx · JavaScript · YAML · JSON
+C# · JavaScript · YAML · JSON
 
 ---
 
@@ -39,14 +39,12 @@ Every post follows a problem-solution structure with real code, real trade-offs,
 
 I believe in building in public and sharing what I learn with the Power Platform community. If something I've written saved you a debugging session, that's the point.
 
-You'll find me active in the **Power Platform community forums**, contributing to discussions on Dataverse architecture, ALM strategy, and solution design patterns.
 
 ---
 
 ## Get in touch
 
-- 💼 [LinkedIn](https://linkedin.com/in/ayametwally)
-- 🐙 [GitHub](https://github.com/ayametwally)
+- 💼 [LinkedIn](https://www.linkedin.com/in/aya-metwally/)
 - ✍️ [Power Notes](https://power-notes.github.io)
 
 ---
