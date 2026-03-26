@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <pattern id="micro-dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="#0066BB" opacity="0.2"/>
+    </pattern>
+    <clipPath id="cyl-clip"><rect x="240" y="100" width="200" height="200"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#000C20"/>
+  <rect width="800" height="400" fill="url(#micro-dots)"/>
+
+  <!-- Large recovery arc (main visual centerpiece) -->
+  <!-- Outer arc - going most of the way around, open at bottom-right -->
+  <path d="M 400 60 A 160 160 0 1 1 530 280" fill="none" stroke="#0066BB" stroke-width="1" opacity="0.2"/>
+  <path d="M 400 70 A 150 150 0 1 1 524 272" fill="none" stroke="#0078D4" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 400 80 A 140 140 0 1 1 518 264" fill="none" stroke="#0099E0" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Arc arrowhead (at end of main arc) -->
+  <polygon points="530,280 518,264 544,270" fill="#0099E0" opacity="0.7"/>
+
+  <!-- Inner arc (tighter, teal) -->
+  <path d="M 400 110 A 100 100 0 1 1 488 290" fill="none" stroke="#00A8C0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 3" opacity="0.45"/>
+
+  <!-- Center Dataverse cylinder -->
+  <!-- Cylinder top ellipse -->
+  <ellipse cx="400" cy="175" rx="70" ry="18" fill="#002850" stroke="#0078D4" stroke-width="1.2"/>
+  <!-- Cylinder body -->
+  <rect x="330" y="175" width="140" height="90" fill="#001E40"/>
+  <rect x="330" y="175" width="140" height="90" fill="none" stroke="#0078D4" stroke-width="1.2" stroke-dasharray="0"/>
+  <!-- Left/right sides of cylinder -->
+  <line x1="330" y1="175" x2="330" y2="265" stroke="#0078D4" stroke-width="1.2"/>
+  <line x1="470" y1="175" x2="470" y2="265" stroke="#0078D4" stroke-width="1.2"/>
+  <!-- Cylinder bottom ellipse -->
+  <ellipse cx="400" cy="265" rx="70" ry="18" fill="#001E40" stroke="#0078D4" stroke-width="1.2"/>
+  <!-- Cylinder highlight line on top -->
+  <path d="M 345 168 A 55 14 0 0 1 445 168" fill="none" stroke="#50A0D8" stroke-width="0.8" opacity="0.5"/>
+  <!-- Data rows in cylinder -->
+  <rect x="348" y="196" width="104" height="5" rx="2" fill="#0066BB" opacity="0.4"/>
+  <rect x="348" y="208" width="80" height="5" rx="2" fill="#0066BB" opacity="0.3"/>
+  <rect x="348" y="220" width="92" height="5" rx="2" fill="#0066BB" opacity="0.35"/>
+  <rect x="348" y="232" width="60" height="5" rx="2" fill="#0066BB" opacity="0.2"/>
+
+  <!-- Deleted records (left side, faded/dashed) -->
+  <g opacity="0.55">
+    <rect x="80" y="155" width="100" height="50" rx="6" fill="#001225" stroke="#0044A0" stroke-width="0.8" stroke-dasharray="4 3"/>
+    <rect x="92" y="167" width="50" height="3" rx="1.5" fill="#3366AA" opacity="0.6"/>
+    <rect x="92" y="175" width="70" height="3" rx="1.5" fill="#3366AA" opacity="0.4"/>
+    <rect x="92" y="183" width="40" height="3" rx="1.5" fill="#3366AA" opacity="0.5"/>
+    <!-- X mark on deleted card -->
+    <line x1="155" y1="155" x2="162" y2="148" stroke="#2255AA" stroke-width="1.2" opacity="0.6"/>
+    <line x1="162" y1="155" x2="155" y2="148" stroke="#2255AA" stroke-width="1.2" opacity="0.6"/>
+  </g>
+
+  <!-- Restored record (right side, bright) -->
+  <g opacity="0.9">
+    <rect x="615" y="145" width="110" height="60" rx="6" fill="#002850" stroke="#00B8D0" stroke-width="1.2"/>
+    <rect x="627" y="157" width="55" height="3" rx="1.5" fill="#00B8D0" opacity="0.7"/>
+    <rect x="627" y="165" width="78" height="3" rx="1.5" fill="#00A0B8" opacity="0.5"/>
+    <rect x="627" y="173" width="45" height="3" rx="1.5" fill="#00B8D0" opacity="0.6"/>
+    <rect x="627" y="181" width="62" height="3" rx="1.5" fill="#00A0B8" opacity="0.45"/>
+    <!-- Check mark on restored -->
+    <path d="M 694,148 L 698,153 L 706,144" fill="none" stroke="#00B8D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Restore arrow from deleted zone toward cylinder -->
+  <path d="M190,180 C230,180 260,176 328,200" fill="none" stroke="#0066BB" stroke-width="1.5" stroke-dasharray="5 3" stroke-linecap="round" opacity="0.6"/>
+  <polygon points="327,194 336,200 326,206" fill="#0066BB" opacity="0.6"/>
+
+  <!-- Restore arrow from cylinder toward restored zone -->
+  <path d="M472,215 C510,215 545,190 612,175" fill="none" stroke="#00A8C0" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+  <polygon points="610,169 620,175 610,181" fill="#00A8C0" opacity="0.7"/>
+
+  <!-- Recovery badge -->
+  <rect x="334" y="295" width="132" height="32" rx="6" fill="#002240" opacity="0.9"/>
+  <rect x="334" y="295" width="132" height="32" rx="6" fill="none" stroke="#0088CC" stroke-width="0.8"/>
+  <circle cx="354" cy="311" r="6" fill="#0078D4" opacity="0.5"/>
+  <circle cx="354" cy="311" r="3" fill="#50B0F0"/>
+  <text x="368" y="315" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#50B0F0" letter-spacing="1">RECYCLE BIN</text>
+
+  <!-- RecycleBinConfig text label -->
+  <text x="400" y="352" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#0066BB" letter-spacing="1.5" opacity="0.6">RecycleBinConfig</text>
+
+  <!-- Left label -->
+  <text x="80" y="142" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#2255AA" letter-spacing="2" opacity="0.7">DELETED</text>
+
+  <!-- Right label -->
+  <text x="725" y="135" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#00A8C0" letter-spacing="2" opacity="0.8">RESTORED</text>
+
+  <!-- Header label -->
+  <text x="400" y="36" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#0078D4" letter-spacing="2.5" opacity="0.6">DATAVERSE</text>
+
+  <!-- Ambient particles -->
+  <circle cx="220" cy="100" r="1.5" fill="#0066BB" opacity="0.35"/>
+  <circle cx="580" cy="340" r="1.5" fill="#00A8C0" opacity="0.3"/>
+  <circle cx="650" cy="80" r="1" fill="#0078D4" opacity="0.25"/>
+  <circle cx="150" cy="300" r="1.5" fill="#0044A0" opacity="0.2"/>
+  <circle cx="700" cy="270" r="1.5" fill="#00A8C0" opacity="0.2"/>
+</svg>

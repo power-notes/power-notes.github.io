@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <pattern id="dot-grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#0078D4" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#001830"/>
+  <rect width="800" height="400" fill="url(#dot-grid)"/>
+
+  <!-- Main pipeline trunk (right side, thick) -->
+  <rect x="620" y="160" width="140" height="80" rx="6" fill="#0055A5" opacity="0.25"/>
+  <rect x="620" y="160" width="140" height="80" rx="6" fill="none" stroke="#0078D4" stroke-width="1.5"/>
+  <!-- Main trunk label -->
+  <rect x="632" y="190" width="116" height="4" rx="2" fill="#50B0F0" opacity="0.6"/>
+  <rect x="632" y="202" width="80" height="4" rx="2" fill="#3A9FE0" opacity="0.4"/>
+
+  <!-- Convergence point -->
+  <circle cx="608" cy="200" r="10" fill="#0078D4" opacity="0.3"/>
+  <circle cx="608" cy="200" r="10" fill="none" stroke="#50B0F0" stroke-width="1.5"/>
+  <circle cx="608" cy="200" r="4" fill="#50B0F0"/>
+
+  <!-- Branch 1 - top (bright blue) -->
+  <path d="M80,80 C180,80 220,80 300,80 C380,80 420,120 520,140 C560,148 580,158 598,196" fill="none" stroke="#0099E0" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Branch 1 start node -->
+  <circle cx="80" cy="80" r="12" fill="#003060" stroke="#0099E0" stroke-width="1.5"/>
+  <circle cx="80" cy="80" r="5" fill="#0099E0"/>
+  <!-- Branch 1 waypoints -->
+  <circle cx="300" cy="80" r="6" fill="#001830" stroke="#0099E0" stroke-width="1.2"/>
+  <circle cx="520" cy="140" r="6" fill="#001830" stroke="#0099E0" stroke-width="1.2"/>
+  <!-- Sub-solution block on branch 1 -->
+  <rect x="140" y="62" width="120" height="36" rx="5" fill="#002850" opacity="0.8"/>
+  <rect x="140" y="62" width="120" height="36" rx="5" fill="none" stroke="#0099E0" stroke-width="0.8"/>
+  <rect x="152" y="74" width="60" height="3" rx="1.5" fill="#0099E0" opacity="0.7"/>
+  <rect x="152" y="82" width="40" height="3" rx="1.5" fill="#0099E0" opacity="0.4"/>
+
+  <!-- Branch 2 - upper-mid (medium blue) -->
+  <path d="M80,160 C160,160 220,160 320,160 C420,160 480,170 560,182 C580,185 594,192 598,196" fill="none" stroke="#0078D4" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Branch 2 start node -->
+  <circle cx="80" cy="160" r="12" fill="#003060" stroke="#0078D4" stroke-width="1.5"/>
+  <circle cx="80" cy="160" r="5" fill="#0078D4"/>
+  <!-- Sub-solution block on branch 2 -->
+  <rect x="170" y="142" width="120" height="36" rx="5" fill="#002255" opacity="0.8"/>
+  <rect x="170" y="142" width="120" height="36" rx="5" fill="none" stroke="#0078D4" stroke-width="0.8"/>
+  <rect x="182" y="154" width="70" height="3" rx="1.5" fill="#0078D4" opacity="0.7"/>
+  <rect x="182" y="162" width="45" height="3" rx="1.5" fill="#0078D4" opacity="0.4"/>
+  <!-- waypoint -->
+  <circle cx="320" cy="160" r="6" fill="#001830" stroke="#0078D4" stroke-width="1.2"/>
+
+  <!-- Branch 3 - lower-mid (teal) -->
+  <path d="M80,240 C180,240 260,240 360,230 C460,220 520,214 560,208 C580,205 594,202 598,200" fill="none" stroke="#00A0B5" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Branch 3 start node -->
+  <circle cx="80" cy="240" r="12" fill="#002840" stroke="#00A0B5" stroke-width="1.5"/>
+  <circle cx="80" cy="240" r="5" fill="#00A0B5"/>
+  <!-- Sub-solution block on branch 3 -->
+  <rect x="190" y="222" width="120" height="36" rx="5" fill="#002240" opacity="0.8"/>
+  <rect x="190" y="222" width="120" height="36" rx="5" fill="none" stroke="#00A0B5" stroke-width="0.8"/>
+  <rect x="202" y="234" width="65" height="3" rx="1.5" fill="#00A0B5" opacity="0.7"/>
+  <rect x="202" y="242" width="42" height="3" rx="1.5" fill="#00A0B5" opacity="0.4"/>
+  <!-- waypoint -->
+  <circle cx="360" cy="230" r="6" fill="#001830" stroke="#00A0B5" stroke-width="1.2"/>
+
+  <!-- Branch 4 - bottom (deep blue) -->
+  <path d="M80,320 C200,320 300,310 380,290 C460,268 530,240 570,222 C586,215 596,206 598,202" fill="none" stroke="#3A70C0" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 4"/>
+  <!-- Branch 4 start node (faded - coming soon) -->
+  <circle cx="80" cy="320" r="12" fill="#002050" stroke="#3A70C0" stroke-width="1.2" opacity="0.6"/>
+  <circle cx="80" cy="320" r="5" fill="#3A70C0" opacity="0.5"/>
+
+  <!-- Arrow pointing into main trunk -->
+  <line x1="618" y1="200" x2="618" y2="200" stroke="#0078D4" stroke-width="1"/>
+
+  <!-- Azure DevOps pipeline icon hint (right edge) -->
+  <rect x="668" y="340" width="60" height="40" rx="5" fill="#0044A0" opacity="0.3"/>
+  <rect x="668" y="340" width="60" height="40" rx="5" fill="none" stroke="#0066CC" stroke-width="0.8" opacity="0.6"/>
+  <rect x="678" y="350" width="40" height="3" rx="1.5" fill="#50B0F0" opacity="0.5"/>
+  <rect x="678" y="358" width="28" height="3" rx="1.5" fill="#50B0F0" opacity="0.3"/>
+  <rect x="678" y="366" width="34" height="3" rx="1.5" fill="#50B0F0" opacity="0.3"/>
+
+  <!-- Git branch label area -->
+  <text x="40" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#0099E0" letter-spacing="2.5" opacity="0.7">SUB-SOLUTIONS</text>
+  <text x="620" y="150" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#50B0F0" letter-spacing="2.5" opacity="0.7">MAIN</text>
+
+  <!-- PR label near convergence -->
+  <rect x="530" y="166" width="48" height="22" rx="4" fill="#0066CC" opacity="0.25"/>
+  <rect x="530" y="166" width="48" height="22" rx="4" fill="none" stroke="#0088EE" stroke-width="0.8"/>
+  <text x="554" y="181" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" fill="#70C0FF" opacity="0.9">PR</text>
+
+  <!-- Ambient particles -->
+  <circle cx="430" cy="50" r="1.5" fill="#0078D4" opacity="0.3"/>
+  <circle cx="500" cy="360" r="1.5" fill="#0099E0" opacity="0.25"/>
+  <circle cx="200" cy="360" r="2" fill="#3A70C0" opacity="0.2"/>
+  <circle cx="660" cy="120" r="1.5" fill="#0078D4" opacity="0.25"/>
+</svg>
