@@ -7,7 +7,7 @@
     "tag": "Architecture",
     "author": "Aya Metwally",
     "readTime": "12 min read",
-    "image": ""
+    "image": "assets/images/power-platform-vs-custom.svg"
   },
   {
     "slug": "plugin-vs-automate-vs-azure",
@@ -17,7 +17,7 @@
     "tag": "Extensibility",
     "author": "Aya Metwally",
     "readTime": "10 min read",
-    "image": ""
+    "image": "assets/images/extensibility.svg"
   },
   {
     "slug": "recycle-bin-native-vs-xrmtoolbox",
@@ -27,6 +27,6 @@
     "tag": "Dataverse",
     "author": "Aya Metwally",
     "readTime": "6 min read",
-    "image": ""
+    "image": "assets/images/dataverse-recycle.svg"
   }
 ]
