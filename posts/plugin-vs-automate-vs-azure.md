@@ -22,27 +22,6 @@ Plugins are the right choice when you need **synchronous execution inside the tr
 - Calculate a field value based on pre-image data
 - Run logic that must succeed or fail with the record save
 
-```csharp
-public class AccountValidationPlugin : IPlugin
-{
-    public void Execute(IServiceProvider serviceProvider)
-    {
-        var context = (IPluginExecutionContext)
-            serviceProvider.GetService(typeof(IPluginExecutionContext));
-
-        if (context.MessageName != "Create") return;
-
-        var target = (Entity)context.InputParameters["Target"];
-        var revenue = target.GetAttributeValue<Money>("revenue");
-
-        if (revenue?.Value < 0)
-        {
-            throw new InvalidPluginExecutionException(
-                "Annual revenue cannot be negative.");
-        }
-    }
-}
-```
 
 **The downside**: plugins require a .NET developer, solution deployment, and ILMerge or NuGet management for dependencies. They're invisible in the UI and hard to debug without Plug-in Registration Tool or XrmToolBox.
 
@@ -55,13 +34,6 @@ Power Automate is the right choice when the logic is **asynchronous, conditional
 - Approval workflows and human-in-the-loop processes
 - Anything a pro-dev doesn't need to own long-term
 
-```text
-Trigger: When a row is added/modified/deleted
-  → Condition: Status = Active AND Revenue > 1,000,000
-    → True: Post to Teams channel
-    → True: Create task in Planner
-    → False: Do nothing
-```
 
 **The downside**: Power Automate is opaque at scale. Flows owned by individual users are a governance disaster. Service accounts, connection references, and environment variables are non-negotiable if you're doing this seriously.
 
@@ -75,21 +47,6 @@ Typical use cases:
 - Processing large datasets or file operations
 - Multi-tenant or cross-environment logic
 
-```csharp
-[FunctionName("ProcessLargeDataset")]
-public async Task<IActionResult> Run(
-    [HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequest req,
-    ILogger log)
-{
-    var body = await new StreamReader(req.Body).ReadToEndAsync();
-    var payload = JsonSerializer.Deserialize<ProcessingPayload>(body);
-
-    // Long-running work that would kill a plugin
-    var results = await _processor.RunAsync(payload, CancellationToken.None);
-
-    return new OkObjectResult(results);
-}
-```
 
 **The downside**: Azure Functions require Azure infrastructure, monitoring setup, and a developer who understands retry policies, cold starts, and deployment slots. The operational overhead is real.
 
