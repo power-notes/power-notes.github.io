@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "power-platform-vs-custom-development",
+    "title": "Power Platform vs Custom Development: how to make the right call",
+    "excerpt": "The five questions every architect should answer before committing to a platform — with adecision matrix, and the hybrid pattern nobody talks about enough.",
+    "date": "Mar 2026",
+    "tag": "Architecture",
+    "author": "Aya Metwally",
+    "readTime": "12 min read",
+    "image": ""
+  },
+  {
+    "slug": "plugin-vs-automate-vs-azure",
+    "title": "Dataverse Plugin vs Power Automate vs Azure Function: the decision framework",
+    "excerpt": "The decision framework I use with every new extensibility requirement. No vendor bias — just latency, licensing, and maintainability trade-offs laid out plainly.",
+    "date": "Feb 2026",
+    "tag": "Extensibility",
+    "author": "Aya Metwally",
+    "readTime": "10 min read",
+    "image": ""
+  },
+  {
+    "slug": "recycle-bin-native-vs-xrmtoolbox",
+    "title": "Recycle Bin in Dataverse: native RecycleBinConfig vs the XrmToolBox plugin",
+    "excerpt": "Microsoft's RecycleBinConfig is here and it's actually good. Here's how it compares to what you've probably been using for years — and when to make the switch.",
+    "date": "Jan 2026",
+    "tag": "Dataverse",
+    "author": "Aya Metwally",
+    "readTime": "6 min read",
+    "image": ""
+  }
+]

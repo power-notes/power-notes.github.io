@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found · Power Notes</title>
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* ── 404-specific styles ─────────────────────────────────── */
+    .page-404 {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Ambient background glow */
+    .page-404::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 70% at 50% 40%, rgba(116,39,116,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 50% at 80% 80%, rgba(0,120,212,0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    [data-theme="dark"] .page-404::before {
+      background:
+        radial-gradient(ellipse 60% 70% at 50% 40%, rgba(116,39,116,0.22) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 50% at 80% 80%, rgba(0,120,212,0.12) 0%, transparent 50%);
+    }
+
+    .error-card {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 520px;
+    }
+
+    /* Animated hexagon */
+    .hex-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .hex-404 {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hex-404 svg.hex-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      color: var(--accent);
+      opacity: 0.12;
+      animation: hexPulse 3s ease-in-out infinite;
+    }
+
+    .hex-404 svg.hex-border {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      color: var(--accent);
+      animation: hexRotate 12s linear infinite;
+    }
+
+    @keyframes hexPulse {
+      0%, 100% { opacity: 0.12; transform: scale(1); }
+      50%       { opacity: 0.22; transform: scale(1.05); }
+    }
+
+    @keyframes hexRotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    .hex-number {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      color: var(--accent);
+      position: relative;
+      z-index: 2;
+      letter-spacing: -0.03em;
+    }
+
+    /* Text */
+    .error-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .error-eyebrow::before,
+    .error-eyebrow::after {
+      content: '';
+      width: 24px;
+      height: 1.5px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .error-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .error-title em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .error-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      max-width: 40ch;
+      margin: 0 auto 2.5rem;
+    }
+
+    /* Actions */
+    .error-actions {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: var(--radius-sm);
+      padding: 0.6rem 1.4rem;
+      text-decoration: none;
+      transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    [data-theme="dark"] .btn-primary { color: #1A0A1A; }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.6rem 1.4rem;
+      text-decoration: none;
+      transition: color 0.15s, border-color 0.15s, background 0.15s, transform 0.15s;
+    }
+
+    .btn-secondary:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-glow);
+      transform: translateY(-2px);
+    }
+
+    /* Suggested links */
+    .error-suggestions {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-faint);
+    }
+
+    .suggestions-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 1rem;
+    }
+
+    .suggestions-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: left;
+    }
+
+    .suggestion-link {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 0.65rem 1rem;
+      border: 1px solid var(--border-faint);
+      border-radius: var(--radius-sm);
+      background: var(--bg-surface);
+      transition: color 0.15s, border-color 0.15s, background 0.15s, transform 0.15s;
+    }
+
+    .suggestion-link:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-glow);
+      transform: translateX(4px);
+    }
+
+    .suggestion-tag {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      background: var(--pp-purple-lite);
+      color: var(--pp-purple);
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+
+    [data-theme="dark"] .suggestion-tag {
+      background: rgba(116,39,116,0.25);
+      color: #D49BD4;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Nav ───────────────────────────────────────────────── -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <svg class="brand-hex" width="26" height="26" viewBox="0 0 28 28" fill="none">
+          <path d="M14 2L25.26 8.5V21.5L14 28L2.74 21.5V8.5L14 2Z" fill="currentColor" opacity="0.18"/>
+          <path d="M14 2L25.26 8.5V21.5L14 28L2.74 21.5V8.5L14 2Z" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="14" cy="14" r="2.5" fill="currentColor"/>
+        </svg>
+        <span class="brand-text">Power<strong>Notes</strong></span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Writing</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle dark mode">
+          <span id="theme-icon">☀</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── 404 Content ────────────────────────────────────────── -->
+  <main class="page-404">
+    <div class="error-card">
+
+      <div class="hex-wrap">
+        <div class="hex-404">
+          <!-- Filled background hex -->
+          <svg class="hex-bg" viewBox="0 0 28 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1L26.12 8V22L14 29L1.88 22V8L14 1Z"/>
+          </svg>
+          <!-- Rotating dashed border hex -->
+          <svg class="hex-border" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 1.5L29.5 9V23L16 30.5L2.5 23V9L16 1.5Z"
+              stroke="currentColor" stroke-width="1" stroke-dasharray="4 2"/>
+          </svg>
+          <span class="hex-number">404</span>
+        </div>
+      </div>
+
+      <div class="error-eyebrow">Page not found</div>
+
+      <h1 class="error-title">
+        This page went <em>off-platform.</em>
+      </h1>
+
+      <p class="error-desc">
+        The URL you followed doesn't exist here — it may have moved,
+        been renamed, or never existed in the first place.
+      </p>
+
+      <div class="error-actions">
+        <a href="index.html" class="btn-primary">
+          ← Back to Writing
+        </a>
+        <a href="index.html#about" class="btn-secondary">
+          About Aya
+        </a>
+      </div>
+
+      <!-- Suggested posts -->
+      <div class="error-suggestions">
+        <div class="suggestions-label">You might be looking for</div>
+        <div class="suggestions-list">
+          <a href="index.html#post/power-platform-vs-custom-development" class="suggestion-link">
+            Power Platform vs Custom Development
+            <span class="suggestion-tag">Architecture</span>
+          </a>
+          <a href="index.html#post/sub-solution-alm-workflow" class="suggestion-link">
+            Sub-solution workflows: avoiding merge chaos
+            <span class="suggestion-tag">ALM</span>
+          </a>
+          <a href="index.html#post/plugin-vs-automate-vs-azure" class="suggestion-link">
+            Plugin vs Power Automate vs Azure Function
+            <span class="suggestion-tag">Extensibility</span>
+          </a>
+          <a href="index.html#post/recycle-bin-native-vs-xrmtoolbox" class="suggestion-link">
+            Recycle Bin: native vs XrmToolBox
+            <span class="suggestion-tag">Dataverse</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <span>Power Notes · by <a href="index.html#about">Aya Metwally</a></span>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/ayametwally" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/ayametwally" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Theme (mirrors app.js, self-contained for 404) ──────────
+    const html     = document.documentElement;
+    const btn      = document.getElementById('theme-toggle');
+    const icon     = document.getElementById('theme-icon');
+
+    function applyTheme(mode) {
+      html.setAttribute('data-theme', mode);
+      icon.textContent = mode === 'dark' ? '☽' : '☀';
+      localStorage.setItem('pn-theme', mode);
+    }
+
+    // Respect saved preference — no flash
+    applyTheme(localStorage.getItem('pn-theme') || 'light');
+
+    btn.addEventListener('click', () => {
+      applyTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+
+</body>
+</html>
