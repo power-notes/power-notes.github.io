@@ -1,13 +1,13 @@
 [
    {
     "slug": "recoverability-by-design",
-    "title": "Dataverse Plugin vs Power Automate vs Azure Function: the decision framework",
-    "excerpt": "Explore how the Power Platform 2026 Wave 1 Release replaces high-stakes "delete panic" with native resilience, introducing soft-delete buffers for flows and surgical, point-in-time restoration for Dataverse records.",
+    "title": "Wave Release 1 2026 - Recoverability by Design",
+    "excerpt": "Explore how the Power Platform 2026 Wave 1 Release replaces high-stakes 'delete panic' with native resilience, introducing soft-delete buffers for flows and surgical, point-in-time restoration for Dataverse records.",
     "date": "Mar 2026",
     "tag": "Wave Release",
     "author": "Aya Metwally",
     "readTime": "7 min read",
-    "image": "assets/images/recoverability-by-design.jpg"
+    "image": "assets/images/recoverability-by-design.svg"
   },
   {
     "slug": "power-platform-vs-custom-development",
