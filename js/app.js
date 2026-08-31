@@ -105,7 +105,7 @@ function renderHome() {
       <!-- Hero -->
       <section class="hero">
         <div class="hero-inner">
-          <span class="hero-kicker">Power Platform · Dataverse · ALM</span>
+          <span class="hero-kicker">Power Platform · Dataverse · Azure · ALM</span>
           <h1>Real-world notes from the <em>platform.</em></h1>
           <p class="hero-sub">
             Practical writing on Power Platform extensibility, solution architecture,
@@ -286,8 +286,10 @@ function renderAbout() {
     <div class="wrap about-view">
       <div class="about-grid">
         <aside class="about-sidebar">
-          <div class="about-avatar-wrap">⬡</div>
-          <div class="about-name">Aya Metwally</div>
+          <div class="about-avatar-wrap">
+  <img src="assets/images/aya-avatar.png" alt="Aya Metwally" class="about-avatar-img" />
+</div>
+<div class="about-name">Aya Metwally</div>
           <div class="about-role">Power Platform Solution Architect</div>
           <div class="about-links">
             <a href="https://www.linkedin.com/in/aya-metwally/" target="_blank" rel="noopener" class="about-link">↗ LinkedIn</a>
