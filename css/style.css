@@ -546,11 +546,18 @@ body {
 .about-grid { display: grid; grid-template-columns: 280px 1fr; gap: 3rem; align-items: start; }
 .about-sidebar {}
 .about-avatar-wrap {
-  width: 200px; height: 200px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--pp-purple) 0%, var(--pp-blue) 100%);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 4rem; margin-bottom: 1.5rem;
-  box-shadow: var(--shadow-hover);
+  width: 160px;
+  height: 160px;
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  background: linear-gradient(135deg, #0078D4, #00B189);
+  padding: 4px;
+}
+.about-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  display: block;
 }
 .about-name { font-family: var(--font-display); font-size: 1.6rem; color: var(--text); margin-bottom: 0.25rem; }
 .about-role { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; }
