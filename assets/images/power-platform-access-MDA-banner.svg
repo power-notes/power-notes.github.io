@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16"/>
+      <stop offset="50%" stop-color="#12102B"/>
+      <stop offset="100%" stop-color="#210D38"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="lensGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <linearGradient id="ghostGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <!-- Glowing effect filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient Orbs -->
+  <circle cx="250" cy="200" r="280" fill="#06B6D4" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="950" cy="450" r="320" fill="#7C3AED" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="600" cy="315" r="200" fill="#8B5CF6" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Technical Network & Grid Background -->
+  <g stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1">
+    <path d="M0 126 H1200 M0 252 H1200 M0 378 H1200 M0 504 H1200"/>
+    <path d="M240 0 V630 M480 0 V630 M720 0 V630 M960 0 V630"/>
+  </g>
+
+  <!-- Network Connectivity Paths -->
+  <g stroke="#06B6D4" stroke-opacity="0.2" stroke-width="1.5" fill="none">
+    <path d="M 150 450 L 300 350 L 450 420 L 600 250 L 750 380 L 900 220 L 1050 320" stroke-dasharray="6 6"/>
+    <circle cx="150" cy="450" r="4" fill="#06B6D4" opacity="0.4"/>
+    <circle cx="300" cy="350" r="4" fill="#8B5CF6" opacity="0.4"/>
+    <circle cx="450" cy="420" r="4" fill="#06B6D4" opacity="0.4"/>
+    <circle cx="750" cy="380" r="4" fill="#8B5CF6" opacity="0.4"/>
+    <circle cx="1050" cy="320" r="4" fill="#06B6D4" opacity="0.4"/>
+  </g>
+
+  <!-- INVISIBLE / GHOST APP INTERFACE (Left Side) -->
+  <g transform="translate(160, 140)">
+    <!-- Hidden App Wireframe Container -->
+    <rect x="0" y="0" width="380" height="320" rx="16" fill="url(#ghostGrad)" stroke="#8B5CF6" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="8 6"/>
+    
+    <!-- Ghost UI Lines & Layout -->
+    <line x1="20" y1="45" x2="360" y2="45" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+    <circle cx="35" cy="25" r="5" fill="#FFFFFF" fill-opacity="0.15"/>
+    <circle cx="50" cy="25" r="5" fill="#FFFFFF" fill-opacity="0.15"/>
+    <circle cx="65" cy="25" r="5" fill="#FFFFFF" fill-opacity="0.15"/>
+    
+    <rect x="30" y="70" width="150" height="100" rx="8" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="4 4"/>
+    <rect x="200" y="70" width="150" height="100" rx="8" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="4 4"/>
+    <rect x="30" y="190" width="320" height="100" rx="8" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="4 4"/>
+    
+    <!-- Hidden Eye Icon (Invisible State) -->
+    <g transform="translate(190, 140)" opacity="0.35">
+      <path d="M-25 0 C-15 -18 15 -18 25 0 C15 18 -15 18 -25 0 Z" fill="none" stroke="#94A3B8" stroke-width="2"/>
+      <line x1="-22" y1="-15" x2="22" y2="15" stroke="#F43F5E" stroke-width="2.5"/>
+    </g>
+  </g>
+
+  <!-- TROUBLESHOOTING MAGNIFYING LENS & USER REVELATION (Center / Right Focus) -->
+  <g transform="translate(680, 315)">
+    
+    <!-- Revealed App Interface (Inside Diagnostic Scan Beam) -->
+    <rect x="-190" y="-170" width="380" height="340" rx="20" fill="#1E1B4B" fill-opacity="0.65" stroke="#06B6D4" stroke-opacity="0.4" stroke-width="2" filter="url(#softGlow)"/>
+
+    <g opacity="0.95">
+      <!-- Active App Header Bar -->
+      <rect x="-170" y="-150" width="340" height="30" rx="6" fill="#312E81"/>
+      <circle cx="-150" cy="-135" r="5" fill="#EF4444"/>
+      <circle cx="-135" cy="-135" r="5" fill="#F59E0B"/>
+      <circle cx="-120" cy="-135" r="5" fill="#10B981"/>
+
+      <!-- USER AVATAR / PROFILE NODE -->
+      <g transform="translate(-80, -30)">
+        <circle cx="0" cy="0" r="42" fill="#1E1548" stroke="#8B5CF6" stroke-width="2.5"/>
+        <circle cx="0" cy="0" r="36" fill="url(#primaryGlow)" opacity="0.25"/>
+        <!-- User Silhouette -->
+        <circle cx="0" cy="-8" r="14" fill="#06B6D4"/>
+        <path d="M-22 22 C-22 10 -12 6 0 6 C12 6 22 10 22 22 Z" fill="#06B6D4"/>
+      </g>
+
+      <!-- USER PERMISSION / SECURITY SHIELD NODE -->
+      <g transform="translate(70, -30)">
+        <circle cx="0" cy="0" r="32" fill="#065F46" opacity="0.35" stroke="#10B981" stroke-width="2"/>
+        <!-- Shield + Checkmark -->
+        <path d="M0 -16 L14 -9 V4 C14 13 0 19 0 19 C0 19 -14 13 -14 4 V-9 Z" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M-5 1 L-1 5 L6 -3" fill="none" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- Connecting Security Link -->
+      <path d="M -38 -30 L 38 -30" stroke="#06B6D4" stroke-width="2" stroke-dasharray="4 3"/>
+
+      <!-- Revealed App Components -->
+      <rect x="-170" y="40" width="155" height="75" rx="10" fill="#2E1065" stroke="#8B5CF6" stroke-width="1.5"/>
+      <rect x="-150" y="58" width="80" height="8" rx="4" fill="#A7F3D0"/>
+      <rect x="-150" y="74" width="115" height="6" rx="3" fill="#6EE7B7" opacity="0.6"/>
+      <rect x="-150" y="86" width="60" height="6" rx="3" fill="#6EE7B7" opacity="0.4"/>
+
+      <rect x="0" y="40" width="170" height="75" rx="10" fill="#2E1065" stroke="#06B6D4" stroke-width="1.5"/>
+      <rect x="20" y="58" width="90" height="8" rx="4" fill="#67E8F9"/>
+      <rect x="20" y="74" width="130" height="6" rx="3" fill="#22D3EE" opacity="0.6"/>
+      <rect x="20" y="86" width="70" height="6" rx="3" fill="#22D3EE" opacity="0.4"/>
+    </g>
+
+    <!-- MAGNIFYING LENS (TROUBLESHOOTING TOOL) -->
+    <circle cx="0" cy="0" r="210" fill="url(#lensGrad)" stroke="url(#primaryGlow)" stroke-width="5" filter="url(#softGlow)"/>
+    <circle cx="0" cy="0" r="210" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/>
+
+    <!-- Lens Glare -->
+    <path d="M -150 -130 A 200 200 0 0 1 120 -160 C 50 -120 -30 -60 -150 -130 Z" fill="#FFFFFF" opacity="0.1"/>
+
+    <!-- Diagnostic Crosshair Elements -->
+    <g stroke="#06B6D4" stroke-width="2" opacity="0.7">
+      <line x1="-225" y1="0" x2="-195" y2="0"/>
+      <line x1="195" y1="0" x2="225" y2="0"/>
+      <line x1="0" y1="-225" x2="0" y2="-195"/>
+      <line x1="0" y1="195" x2="0" y2="225"/>
+      
+      <!-- Corner HUD Markers -->
+      <path d="M -160 -160 L -140 -160 M -160 -160 L -160 -140"/>
+      <path d="M 160 -160 L 140 -160 M 160 -160 L 160 -140"/>
+      <path d="M -160 160 L -140 160 M -160 160 L -160 140"/>
+      <path d="M 160 160 L 140 160 M 160 160 L 160 140"/>
+    </g>
+
+    <!-- Handle angled down-right -->
+    <g transform="rotate(45, 0, 0)">
+      <rect x="205" y="-16" width="110" height="32" rx="10" fill="#1E1B4B" stroke="#06B6D4" stroke-width="3"/>
+      <rect x="220" y="-10" width="80" height="20" rx="5" fill="url(#primaryGlow)" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- DIAGNOSTIC FLOATING STATUS BADGES -->
+  <!-- Success Badge -->
+  <g transform="translate(130, 470)" filter="url(#softGlow)">
+    <rect x="0" y="0" width="130" height="44" rx="22" fill="#064E3B" stroke="#10B981" stroke-width="2"/>
+    <circle cx="24" cy="22" r="12" fill="#10B981"/>
+    <path d="M19 22 L23 26 L30 18" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="46" y="16" width="60" height="5" rx="2.5" fill="#A7F3D0"/>
+    <rect x="46" y="25" width="40" height="4" rx="2" fill="#6EE7B7" opacity="0.7"/>
+  </g>
+
+  <!-- Diagnostic Alert Badge -->
+  <g transform="translate(970, 130)" filter="url(#softGlow)">
+    <rect x="0" y="0" width="140" height="44" rx="22" fill="#4C0519" stroke="#F43F5E" stroke-width="2"/>
+    <circle cx="24" cy="22" r="12" fill="#F43F5E"/>
+    <path d="M24 15 V23 M24 27 V28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="46" y="16" width="70" height="5" rx="2.5" fill="#FECDD3"/>
+    <rect x="46" y="25" width="45" height="4" rx="2" fill="#FDA4AF" opacity="0.7"/>
+  </g>
+</svg>
