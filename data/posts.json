@@ -12,11 +12,23 @@
   {
     "slug": "power-platform-vs-custom-development",
     "title": "Power Platform vs Custom Development: how to make the right call",
-    "excerpt": "The five questions every architect should answer before committing to a platform — with adecision matrix, and the hybrid pattern nobody talks about enough.",
+    "excerpt": "The five questions every architect should answer before committing to a platform — with a decision matrix, and the hybrid pattern nobody talks about enough.",
     "date": "Mar 2026",
     "tag": "Architecture",
     "author": "Aya Metwally",
     "readTime": "12 min read",
     "image": "assets/images/power-platform-vs-custom.svg"
+  },
+    
+{
+    "slug": "power-platform-app-visibility-troubleshooting",
+    "title": "Model-Driven App Access: A Power Platform Troubleshooting",
+    "excerpt": "A user could access every record but couldn't see a single app — and the security role checked out fine. Here's the elimination checklist, the built-in diagnostic tool most admins miss, and the license issue it uncovered.",
+    "date": "Aug 2026",
+    "tag": "Troubleshooting",
+    "author": "Aya Metwally",
+    "readTime": "4 min read",
+    "image": "assets/images/power-platform-access-MDA-banner.svg"
   }
+  
 ]
