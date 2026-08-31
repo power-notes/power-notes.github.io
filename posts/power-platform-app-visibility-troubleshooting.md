@@ -37,7 +37,7 @@ At this point, every visible, comparable configuration matched a peer who *could
 Rather than continuing to compare configuration side-by-side, we used Microsoft's built-in **App Access Checker** — a diagnostic page most admins don't know exists:
 
 ```
-https://<yourorg>.crm.dynamics.com/WebResources/msdyn\_AppAccessChecker.html
+https://<yourorg>.crm.dynamics.com/WebResources/msdyn/_AppAccessChecker.html
 ```
 
 Log in as an admin, enter the affected user's UPN or email, and it evaluates the user's actual resolved access **per app**, returning:
@@ -57,5 +57,5 @@ The checker flagged a **licensing issue** for this specific user. Everything els
 * **Records access ≠ app access.** These are governed by different mechanisms in Dataverse, and it's easy to assume they travel together.
 * **"Same role" doesn't always mean the same thing.** Business Unit scoping can make an identically-named role a different record entirely.
 * **When visual comparison to a working peer runs out of leads, stop comparing and query the user's resolved state directly.** The App Access Checker does exactly that, and it will surface licensing problems that no amount of role/team auditing will show you.
-* Bookmark `https://<yourorg>.crm.dynamics.com/WebResources/msdyn\_AppAccessChecker.html` — it's one of the fastest first-line diagnostics for this exact class of issue, and it works even when you don't have visibility into the tenant's licensing yourself.
+* Bookmark `https://<yourorg>.crm.dynamics.com/WebResources/msdyn/_AppAccessChecker.html` — it's one of the fastest first-line diagnostics for this exact class of issue, and it works even when you don't have visibility into the tenant's licensing yourself.
 
