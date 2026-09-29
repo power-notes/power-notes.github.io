@@ -1,17 +1,8 @@
----
-slug: clone-dataverse-lessons
-title: "What to Expect When You're Expecting to Clone Dataverse"
-excerpt: "A client asked for a copy of production 'for the last 12 months only'. Nine technical checks before you press copy, plus a document migration checklist."
-date: 2026-10-06
-tag: ALM
-author: Aya Metwally
-readTime: 12 min read
-image: images/clone-dataverse-hero.svg
----
+# What to Expect When You're Expecting to Clone Dataverse
 
 The request came in as a single line.
 
-*"Can we get a copy of production in the lower environment for the last 12 months only?"*
+*"Can we get a copy of production in the lower environment for the last 12 months data only?"*
 
 No requirements doc, no follow-up questions. The system was live, the users were settled, and now they wanted somewhere to play: a sandbox that looked and behaved like the real thing, with no risk of breaking it. Perfectly reasonable. I had been part of the go-live migration, so I thought I knew what I was signing up for.
 
@@ -26,6 +17,18 @@ This post is that list.
 ## The order I'd run it in now
 
 Nine checks in three phases, plus a document migration checklist if files are in scope. The order matters. Data writes trigger logic and timers fire on the clock, so the safety work has to be in place **before** the first record lands, not after.
+
+#### First and foremost, ask yourself two key architectural questions:
+1. Are you provisioning a brand-new environment, or migrating into an existing target?
+2. Will you redeploy solutions from scratch, or leverage a minimal copy of Production?
+
+Your available tenant storage capacity will play a major role in this decision.
+
+#### Key Optimization Tips:
+
+**Protect Production Performance:** Develop and test your migration packages against a temporary Dataverse sandbox copied from Production. This isolates workload overhead and prevents performance degradation for live users.
+
+**Scale for Data Throughput:** If using SQL (as another source used in migration, I had Azure SQL in this case), temporarily scale up its vCore compute capacity to maximize load speeds during ingestion.
 
 ## Phase 1: Before you press anything
 
@@ -166,7 +169,6 @@ Why it matters:
 
 - **Your windowing logic depends on it.** The whole exercise selected records by `createdon`. If the target restarts every row at load time, the next delta load, refresh or reconciliation can't tell old from new.
 - **Age-driven behaviour only reproduces if the ages do.** Views and charts filtered on "created in the last 30 days", SLA and ageing calculations, retention and bulk delete jobs, dashboards, Power BI reports and automations with date conditions all read `createdon`.
-- **Reconciliation.** You can compare source and target by key and by month created. If every row sits on load day, a month-by-month count proves nothing.
 - **Testing realism.** A playground where every record was created today is not a mirror of production.
 - **Load provenance.** The real insert time survives in `overriddencreatedon`, which helps you separate loaded rows from records your testers create afterwards.
 
@@ -175,13 +177,14 @@ Things to know before you rely on it:
 - **It is write-on-create.** There is no update route to correct it afterwards, so a wrong load means delete and reload. Load a small batch first and check the result in a view.
 - **Not every table has it.** Check the metadata for each table in scope.
 - **Send UTC.** ETL tools can convert time zones quietly, so verify a sample against the source.
-- **`modifiedon` has no equivalent.** It will show load time. Preserving it takes a plugin, and state changes on completed records such as activities can overwrite what you stamped. Decide with the client whether they need it, and document that `modifiedon` reflects load time if not. `createdby` and `modifiedby` will show the loading identity too.
+- **`modifiedon` has no equivalent.** It will show load time. Decide with the client whether they need it, and document that `modifiedon` reflects load time if not.
 
 ### 9. Mask before anyone logs in
 
 **A refresh puts production personal data in an environment with a wider audience and weaker governance.** More people have access, there are fewer controls, and GDPR does not relax because the environment is called a sandbox.
 
 Masking here means changing the stored values. Column-level masking on secured columns only changes what a user sees, so it does not qualify. If you load with an ETL tool, mask in flight so unmasked data never lands in the target. Otherwise mask straight after the load and keep the environment in administration mode until it is done.
+You can agree with the client on the masking roles. In this case, we had the masking roles done on-the-fly via SSIS.
 
 How to mask well:
 
@@ -201,14 +204,7 @@ Documents don't live in one place, and each store has its own limits:
 | Notes | `annotation.documentbody` | Base64 string. Default limit 5 MB, configurable up to 128 MB |
 | Email attachments | `activitymimeattachment.body` | Same as notes |
 | File columns | Dataverse file storage | Up to 10 GB per column. Use the block upload messages for large files |
-| Image columns | Dataverse file storage | Up to 30 MB |
 | SharePoint | Document location records pointing at a site and library | The files are not in Dataverse at all |
-
-**Inventory and scope**
-
-- [ ] Documents inventoried by store, with row counts and total size per table
-- [ ] Documents follow their parent: only files whose parent record is in the loaded set are migrated, filtered by parent rather than by the file's own date
-- [ ] Decision recorded: real files, placeholder files, or metadata only. Masking Dataverse columns does not touch what is inside the file body, so real files need compliance sign-off
 
 **Capacity and limits**
 
