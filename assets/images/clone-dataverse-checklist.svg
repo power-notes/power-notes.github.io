@@ -1,0 +1,239 @@
+<svg viewBox="0 0 1200 675" width="100%" height="100%" style="background: #050d1a; font-family: &#39;Segoe UI&#39;, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0e2a4a" />
+      <stop offset="60%" stop-color="#050d1a" />
+      <stop offset="100%" stop-color="#02060d" />
+    </radialGradient>
+
+    <!-- Neon Teal Gradients -->
+    <linearGradient id="tealGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="pipeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGlow)" />
+
+  <!-- Tech Grid Background Pattern Overlay -->
+  <g opacity="0.05" stroke="#00f2fe" stroke-width="1">
+    <path d="M0,75 H1200 M0,150 H1200 M0,225 H1200 M0,300 H1200 M0,375 H1200 M0,450 H1200 M0,525 H1200 M0,600 H1200" />
+    <path d="M150,0 V675 M300,0 V675 M450,0 V675 M600,0 V675 M750,0 V675 M900,0 V675 M1050,0 V675" />
+  </g>
+
+  <!-- HEADER -->
+  <g transform="translate(600, 42)" text-anchor="middle">
+    <text y="0" fill="#ffffff" font-size="25" font-weight="800" filter="url(#softGlow)">
+      TECHNICAL ARCHITECTURE & ALM CHECKLIST for Dataverse Cloning
+    </text>
+    
+    <!-- Subtitle Pill -->
+    <g transform="translate(0, 18)">
+      <path d="M-180,0 L180,0 A12,12 0 0,1 192,12 A12,12 0 0,1 180,24 L-180,24 A12,12 0 0,1 -192,12 A12,12 0 0,1 -180,0 Z" fill="#08223c" stroke="#00e5ff" stroke-width="1.5" />
+      <text y="16" fill="#00e5ff" font-size="11" font-weight="700">WHAT TO EXPECT WHEN CLONING: PHASED APPROACH</text>
+    </g>
+  </g>
+
+  <!-- SOURCE ENVIRONMENT (PRODUCTION) -->
+  <g transform="translate(230, 260)">
+    <!-- Outer Rings -->
+    <circle r="130" fill="none" stroke="#00e5ff" stroke-width="1" stroke-dasharray="4,8" opacity="0.4" />
+    <circle r="115" fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.6" />
+    <circle r="100" fill="#0a2540" stroke="#00e5ff" stroke-width="2" filter="url(#neonGlow)" />
+
+    <!-- Globe / Tech Lines inside Sphere -->
+    <ellipse rx="100" ry="40" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.4" />
+    <ellipse rx="40" ry="100" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.4" />
+    <path d="M-100,0 H100 M0,-100 V100" stroke="#00e5ff" stroke-width="1" opacity="0.3" />
+
+    <!-- Labels Inside Source -->
+    <g fill="#ffffff" font-size="11" font-weight="600" text-anchor="middle">
+      <rect x="-45" y="-55" width="90" height="20" rx="4" fill="#05182c" stroke="#00e5ff" stroke-width="0.8" />
+      <text y="-41">Accounts</text>
+
+      <rect x="-70" y="-10" width="60" height="20" rx="4" fill="#05182c" stroke="#00e5ff" stroke-width="0.8" />
+      <text x="-40" y="4">Contacts</text>
+
+      <rect x="10" y="15" width="65" height="20" rx="4" fill="#05182c" stroke="#00e5ff" stroke-width="0.8" />
+      <text x="42" y="29">Activities</text>
+    </g>
+
+    <!-- Source Title Banner -->
+    <text x="0" y="-130" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">PRODUCTION ENVIRONMENT</text>
+    <text x="0" y="-115" fill="#00e5ff" font-size="12" font-weight="600" text-anchor="middle">(SOURCE)</text>
+
+    <!-- Live History Badge -->
+    <g transform="translate(-140, -70)">
+      <rect width="80" height="22" rx="3" fill="#061d33" stroke="#00e5ff" stroke-width="1" />
+      <text x="40" y="15" fill="#00f2fe" font-size="10" font-weight="700" text-anchor="middle">LIVE HISTORY</text>
+    </g>
+  </g>
+
+  <!-- DATA FLOW PIPE & FILTER MECHANISM -->
+  <g transform="translate(330, 260)">
+    <!-- Main Flow Tube -->
+    <path d="M 0,-15 Q 120,-80 260,-80 T 520,0" fill="none" stroke="url(#pipeGradient)" stroke-width="30" filter="url(#softGlow)" />
+    <path d="M 0,-15 Q 120,-80 260,-80 T 520,0" fill="none" stroke="#00f2fe" stroke-width="2" stroke-dasharray="6,6" />
+
+    <!-- DATA FILTER Box on Pipe -->
+    <g transform="translate(330, -80)">
+      <rect x="-110" y="-35" width="220" height="70" rx="8" fill="#092038" stroke="#00f2fe" stroke-width="2" filter="url(#neonGlow)" />
+      <text x="0" y="-12" fill="#00f2fe" font-size="13" font-weight="800" text-anchor="middle">DATA FILTER:</text>
+      <text x="0" y="7" fill="#ffffff" font-size="11" font-weight="600" text-anchor="middle">createdon >= (Cut-off Date)</text>
+      <text x="0" y="22" fill="#a0aec0" font-size="10" font-weight="500" text-anchor="middle">& Preserve overriddencreatedon</text>
+    </g>
+  </g>
+
+  <!-- TARGET ENVIRONMENT (SANDBOX) -->
+  <g transform="translate(850, 260)">
+    <!-- Outer Rings -->
+    <circle r="110" fill="none" stroke="#00e5ff" stroke-width="1" stroke-dasharray="4,8" opacity="0.4" />
+    <circle r="95" fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.6" />
+    <circle r="80" fill="#0a2540" stroke="#00e5ff" stroke-width="2" filter="url(#neonGlow)" />
+
+    <!-- Globe Lines -->
+    <ellipse rx="80" ry="30" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.4" />
+    <ellipse rx="30" ry="80" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.4" />
+
+    <!-- Target Title Banner -->
+    <text x="0" y="-130" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">LOWER ENVIRONMENT</text>
+    <text x="0" y="-115" fill="#00e5ff" font-size="12" font-weight="600" text-anchor="middle">(SANDBOX TARGET)</text>
+
+    <!-- Filtered Data Load Badge -->
+    <g transform="translate(-130, -70)">
+      <rect width="105" height="22" rx="3" fill="#061d33" stroke="#00e5ff" stroke-width="1" />
+      <text x="52" y="15" fill="#00f2fe" font-size="10" font-weight="700" text-anchor="middle">FILTERED DATA LOAD</text>
+    </g>
+  </g>
+
+  <!-- MIDDLE ARCHITECTURAL CARDS -->
+  <!-- Azure Dependencies -->
+  <g transform="translate(420, 360)">
+    <rect x="0" y="0" width="130" height="65" rx="6" fill="#081b30" stroke="#1e3a5f" stroke-width="1.5" />
+    <text x="65" y="16" fill="#00e5ff" font-size="10" font-weight="700" text-anchor="middle">AZURE DEPENDENCIES</text>
+    <!-- Icons placeholder text -->
+    <text x="22" y="45" fill="#ffffff" font-size="9" text-anchor="middle">⚡ Azure</text>
+    <text x="65" y="45" fill="#ffffff" font-size="9" text-anchor="middle">🔑 Key Vault</text>
+    <text x="108" y="45" fill="#ffffff" font-size="9" text-anchor="middle">📦 Blob</text>
+  </g>
+
+  <!-- Virtual Table Endpoint -->
+  <g transform="translate(580, 360)">
+    <rect x="0" y="0" width="130" height="65" rx="6" fill="#081b30" stroke="#1e3a5f" stroke-width="1.5" />
+    <text x="65" y="16" fill="#00e5ff" font-size="10" font-weight="700" text-anchor="middle">VIRTUAL TABLE ENDPOINT</text>
+    <rect x="20" y="28" width="35" height="25" fill="#0c2744" stroke="#00e5ff" stroke-width="0.8" />
+    <text x="70" y="43" fill="#00f2fe" font-size="12" text-anchor="middle">➔</text>
+    <rect x="80" y="28" width="35" height="25" fill="#0c2744" stroke="#00e5ff" stroke-width="0.8" />
+  </g>
+
+  <!-- Data Masking -->
+  <g transform="translate(980, 360)">
+    <rect x="0" y="0" width="130" height="65" rx="6" fill="#081b30" stroke="#1e3a5f" stroke-width="1.5" />
+    <text x="65" y="16" fill="#00e5ff" font-size="10" font-weight="700" text-anchor="middle">DATA MASKING</text>
+    <text x="30" y="42" fill="#ffffff" font-size="9" text-anchor="middle">Original</text>
+    <text x="65" y="42" fill="#00f2fe" font-size="12" text-anchor="middle">➔</text>
+    <text x="100" y="42" fill="#00f2fe" font-size="9" font-weight="700" text-anchor="middle">Masked</text>
+  </g>
+
+  <!-- BOTTOM PROCESS FLOW (STEPS 1 - 9) -->
+  <g transform="translate(50, 480)">
+    <!-- Connector Track -->
+    <path d="M 40,30 H 1060" stroke="#102e4d" stroke-width="4" />
+    <path d="M 40,30 H 1060" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="8,8" />
+
+    <!-- Step Items -->
+    <!-- Step 1 -->
+    <g transform="translate(40, 0)">
+      <circle cx="0" cy="30" r="14" fill="#092038" stroke="#00f2fe" stroke-width="2" />
+      <text x="0" y="34" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">1</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">1. Scope window</text>
+      <text x="0" y="74" fill="#8a9ba8" font-size="9" text-anchor="middle">(Core vs Aux 12 Mo.)</text>
+    </g>
+
+    <!-- Step 2 -->
+    <g transform="translate(168, 0)">
+      <circle cx="0" cy="30" r="14" fill="#092038" stroke="#00f2fe" stroke-width="2" />
+      <text x="0" y="34" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">2</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">2. Line up Azure</text>
+    </g>
+
+    <!-- Step 3 -->
+    <g transform="translate(296, 0)">
+      <circle cx="0" cy="30" r="14" fill="#092038" stroke="#00f2fe" stroke-width="2" />
+      <text x="0" y="34" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">3</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">3. Match Solutions</text>
+    </g>
+
+    <!-- Step 4 -->
+    <g transform="translate(424, 0)">
+      <circle cx="0" cy="30" r="14" fill="#092038" stroke="#00f2fe" stroke-width="2" />
+      <text x="0" y="34" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">4</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">4. Virtual Tables</text>
+    </g>
+
+    <!-- Step 5 -->
+    <g transform="translate(552, 0)">
+      <circle cx="0" cy="30" r="14" fill="#092038" stroke="#00f2fe" stroke-width="2" />
+      <text x="0" y="34" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">5</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">5. Lockdown Integrations</text>
+      <text x="0" y="74" fill="#8a9ba8" font-size="9" text-anchor="middle">(STU8, Lower Env)</text>
+    </g>
+
+    <!-- Step 6 -->
+    <g transform="translate(680, 0)">
+      <circle cx="0" cy="30" r="14" fill="#092038" stroke="#00f2fe" stroke-width="2" />
+      <text x="0" y="34" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">6</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">6. Bypass Custom Logic</text>
+      <text x="0" y="74" fill="#8a9ba8" font-size="9" text-anchor="middle">(execution header)</text>
+    </g>
+
+    <!-- Step 7 -->
+    <g transform="translate(808, 0)">
+      <circle cx="0" cy="30" r="14" fill="#092038" stroke="#00f2fe" stroke-width="2" />
+      <text x="0" y="34" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">7</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">7. Disable Timers</text>
+    </g>
+
+    <!-- Step 8 -->
+    <g transform="translate(936, 0)">
+      <circle cx="0" cy="30" r="14" fill="#092038" stroke="#00f2fe" stroke-width="2" />
+      <text x="0" y="34" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">8</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">8. Load Data & GUIDs</text>
+    </g>
+
+    <!-- Step 9 -->
+    <g transform="translate(1064, 0)">
+      <circle cx="0" cy="30" r="14" fill="#092038" stroke="#00f2fe" stroke-width="2" />
+      <text x="0" y="34" fill="#ffffff" font-size="11" font-weight="800" text-anchor="middle">9</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">9. Mask PII</text>
+      <text x="0" y="74" fill="#8a9ba8" font-size="9" text-anchor="middle">(GDPR compliance)</text>
+    </g>
+  </g>
+
+  <!-- FOOTER -->
+  <g transform="translate(600, 635)" text-anchor="middle">
+    <rect x="-350" y="-18" width="700" height="32" rx="4" fill="#071a2e" stroke="#00e5ff" stroke-width="1" />
+    <text y="3" fill="#ffffff" font-size="13" font-weight="700">
+      CLONE DATAFLOW GUIDELINES. AUTHOR: AYA METWALLY
+    </text>
+  </g>
+</svg>
