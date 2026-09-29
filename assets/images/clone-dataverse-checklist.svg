@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="'Segoe UI', Arial, Helvetica, sans-serif" role="img" aria-label="Infographic: nine-step checklist for cloning a Dataverse production environment into a lower environment." xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmMzgzYjMyZC1kN2U1LTRkNGUtOWY5Mi0xY2Y5MjUyNjgwNzcAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaNAUSURL/TxnvyuFWfk156kAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDphOTg0MjMzYi1lYjYxLTRjMTYtODgzYS0zMDdiMzg0ZmEyYTJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoa2sJlEY2R8+4RVCK3iVQFgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggcfn1nA63GdbTuuGO1jnMllxFbsLoXNipVzImUrsMiDekZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaIXB5T7c73qCrg2axdr7Tg0AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYINs3Fx7Y036oUybnVvB9a7GgyOyX18FN2Z6QProgB4L/ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GQFRZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmYzODNiMzJkLWQ3ZTUtNGQ0ZS05ZjkyLTFjZjkyNTI2ODA3Ny9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjRhNjBmOTg1LWI3OWMtNDAyYy05YmEzLWU0OTdmM2QyNjVlZnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBx+fWcDrcZ1tO64Y7WOcyWXEVuwuhc2KlXMiZSuwyIN6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggMr6vYyu7E39S5haOQ9pWZrDgQYQF/fiUYBlt17L7TmuiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggzrrW+52lC8ef+3QWOEh5d2HMd9VobGgh7wp46qiIL9Z0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQDK1nHUP4wA3oX7NvDHKj0fHAbF3aGZxaRDWqTfEYRt+F+y2ilClMZXijfSWnXah81UX4XO01go7/+U18uAxDEA=</c2pa:manifest></metadata>
+<title>Technical architecture and ALM checklist for Dataverse cloning</title>
+<defs>
+<radialGradient id="bg" cx="50%" cy="38%" r="75%"><stop offset="0" stop-color="#0C2E4E"/><stop offset="1" stop-color="#040B18"/></radialGradient>
+<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#1E4468" stroke-opacity=".28" stroke-width="1"/></pattern>
+<radialGradient id="globe" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#0F4468"/><stop offset="1" stop-color="#061527"/></radialGradient>
+<linearGradient id="band" x1="0" x2="1"><stop offset="0" stop-color="#22D3EE" stop-opacity=".75"/><stop offset="1" stop-color="#00B189" stop-opacity=".55"/></linearGradient>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#grid)"/>
+<text x="800" y="64" font-size="38" font-weight="800" fill="#fff" text-anchor="middle">TECHNICAL ARCHITECTURE &amp; ALM CHECKLIST <tspan font-weight="600">for Dataverse Cloning</tspan></text>
+<rect x="500" y="96" width="600" height="36" rx="18.0" fill="#08203A" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="800" y="120" font-size="15" fill="#22D3EE" font-weight="bold" text-anchor="middle" letter-spacing="1.5">WHAT TO EXPECT WHEN CLONING: PHASED APPROACH</text>
+<path d="M420 360 C540 330 620 252 800 232 C980 252 1060 322 1180 340" fill="none" stroke="url(#band)" stroke-width="42" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M420 360 C540 330 620 252 800 232 C980 252 1060 322 1180 340" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-dasharray="2 12" stroke-linecap="round"/>
+<circle cx="310" cy="350" r="140" fill="none" stroke="#22D3EE" stroke-opacity=".35" stroke-width="2" stroke-dasharray="3 9"/>
+<circle cx="310" cy="350" r="126" fill="none" stroke="#22D3EE" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="310" cy="350" r="112" fill="url(#globe)" stroke="#22D3EE" stroke-width="3.5" stroke-opacity="1" filter="url(#glow)"/>
+<ellipse cx="310" cy="350" rx="40" ry="112" fill="none" stroke="#22D3EE" stroke-opacity=".28" stroke-width="1.5"/>
+<ellipse cx="310" cy="350" rx="82" ry="112" fill="none" stroke="#22D3EE" stroke-opacity=".28" stroke-width="1.5"/>
+<ellipse cx="310" cy="350" rx="112" ry="30" fill="none" stroke="#22D3EE" stroke-opacity=".28" stroke-width="1.5"/>
+<circle cx="1290" cy="350" r="140" fill="none" stroke="#22D3EE" stroke-opacity=".35" stroke-width="2" stroke-dasharray="3 9"/>
+<circle cx="1290" cy="350" r="126" fill="none" stroke="#22D3EE" stroke-opacity=".5" stroke-width="2"/>
+<circle cx="1290" cy="350" r="112" fill="url(#globe)" stroke="#22D3EE" stroke-width="3.5" stroke-opacity=".5" filter="url(#glow)"/>
+<ellipse cx="1290" cy="350" rx="40" ry="112" fill="none" stroke="#22D3EE" stroke-opacity=".28" stroke-width="1.5"/>
+<ellipse cx="1290" cy="350" rx="82" ry="112" fill="none" stroke="#22D3EE" stroke-opacity=".28" stroke-width="1.5"/>
+<ellipse cx="1290" cy="350" rx="112" ry="30" fill="none" stroke="#22D3EE" stroke-opacity=".28" stroke-width="1.5"/>
+<rect x="282.0" y="286" width="96" height="28" rx="14.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="330" y="305" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">Accounts</text>
+<rect x="224.0" y="338" width="96" height="28" rx="14.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="272" y="357" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">Contacts</text>
+<rect x="292.0" y="390" width="96" height="28" rx="14.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="340" y="409" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">Activities</text>
+<rect x="1262.0" y="286" width="96" height="28" rx="14.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="1310" y="305" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">Accounts</text>
+<rect x="1204.0" y="338" width="96" height="28" rx="14.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="1252" y="357" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">Contacts</text>
+<rect x="1272.0" y="390" width="96" height="28" rx="14.0" fill="#0A2A48" fill-opacity=".95" stroke="#F2C811" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="1320" y="409" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">Activities</text>
+<text x="310" y="194" font-size="22" fill="#fff" font-weight="bold" text-anchor="middle">PRODUCTION ENVIRONMENT</text>
+<text x="310" y="218" font-size="16" fill="#22D3EE" font-weight="bold" text-anchor="middle">(SOURCE)</text>
+<text x="1290" y="194" font-size="22" fill="#fff" font-weight="bold" text-anchor="middle">LOWER ENVIRONMENT</text>
+<text x="1290" y="218" font-size="16" fill="#22D3EE" font-weight="bold" text-anchor="middle">(SANDBOX TARGET)</text>
+<rect x="68.0" y="336" width="124" height="28" rx="14.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="130" y="355" font-size="12" fill="#fff" font-weight="bold" text-anchor="middle">LIVE HISTORY</text>
+<rect x="1046.0" y="358" width="158" height="28" rx="14.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="1125" y="377" font-size="12" fill="#fff" font-weight="bold" text-anchor="middle">FILTERED DATA LOAD</text>
+<rect x="610" y="168" width="380" height="96" rx="12" fill="#0A2440" fill-opacity=".98" stroke="#F2C811" stroke-width="2.5"/>
+<text x="800" y="196" font-size="19" fill="#F2C811" font-weight="bold" text-anchor="middle">DATA FILTER:</text>
+<text x="800" y="226" font-size="19" fill="#fff" font-weight="bold" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">createdon &gt;= (Cut-off Date)</text>
+<text x="800" y="250" font-size="14" fill="#8FA6C4" font-weight="normal" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">&amp; preserve overriddencreatedon</text>
+<rect x="470" y="420" width="250" height="96" rx="12" fill="#0A2038" fill-opacity=".95" stroke="#22D3EE" stroke-opacity=".6" stroke-width="2"/>
+<text x="595.0" y="447" font-size="13" fill="#22D3EE" font-weight="bold" text-anchor="middle" letter-spacing="1">AZURE DEPENDENCIES</text>
+<rect x="494" y="476" width="12" height="12" rx="3" fill="#0078D4"/>
+<text x="512" y="487" font-size="14" fill="#fff" font-weight="normal" text-anchor="start">Azure</text>
+<rect x="564" y="476" width="12" height="12" rx="3" fill="#F2C811"/>
+<text x="582" y="487" font-size="14" fill="#fff" font-weight="normal" text-anchor="start">Key Vault</text>
+<rect x="650" y="476" width="12" height="12" rx="3" fill="#F28C38"/>
+<text x="668" y="487" font-size="14" fill="#fff" font-weight="normal" text-anchor="start">Blob</text>
+<rect x="760" y="420" width="250" height="96" rx="12" fill="#0A2038" fill-opacity=".95" stroke="#22D3EE" stroke-opacity=".6" stroke-width="2"/>
+<text x="885.0" y="447" font-size="13" fill="#22D3EE" font-weight="bold" text-anchor="middle" letter-spacing="1">VIRTUAL TABLE ENDPOINT</text>
+<rect x="782" y="468" width="84" height="30" rx="15.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="824" y="488" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">Prod</text>
+<path d="M874 483 H896" stroke="#22D3EE" stroke-width="3" stroke-linecap="round"/><polygon points="894,475 906,483 894,491" fill="#22D3EE"/>
+<rect x="912" y="468" width="84" height="30" rx="15.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="954" y="488" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">Non-prod</text>
+<rect x="185" y="520" width="250" height="96" rx="12" fill="#0A2038" fill-opacity=".95" stroke="#22D3EE" stroke-opacity=".6" stroke-width="2"/>
+<text x="310.0" y="547" font-size="13" fill="#22D3EE" font-weight="bold" text-anchor="middle" letter-spacing="1">INTEGRATION ENDPOINTS</text>
+<rect x="207" y="568" width="84" height="30" rx="15.0" fill="#0A2A48" fill-opacity=".95" stroke="#8E3A8E" stroke-width="2"/>
+<text x="249" y="588" font-size="13" fill="#C98AC9" font-weight="bold" text-anchor="middle">Live</text>
+<path d="M215 572 L283 594" stroke="#8E3A8E" stroke-width="2.5"/>
+<path d="M299 583 H321" stroke="#22D3EE" stroke-width="3" stroke-linecap="round"/><polygon points="319,575 331,583 319,591" fill="#22D3EE"/>
+<rect x="337" y="568" width="84" height="30" rx="15.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="379" y="588" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">Stub</text>
+<rect x="1165" y="520" width="250" height="96" rx="12" fill="#0A2038" fill-opacity=".95" stroke="#22D3EE" stroke-opacity=".6" stroke-width="2"/>
+<text x="1290.0" y="547" font-size="13" fill="#22D3EE" font-weight="bold" text-anchor="middle" letter-spacing="1">DATA MASKING</text>
+<rect x="1187" y="568" width="84" height="30" rx="15.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="1229" y="588" font-size="13" fill="#fff" font-weight="bold" text-anchor="middle">Original</text>
+<path d="M1279 583 H1301" stroke="#22D3EE" stroke-width="3" stroke-linecap="round"/><polygon points="1299,575 1311,583 1299,591" fill="#22D3EE"/>
+<rect x="1317" y="568" width="84" height="30" rx="15.0" fill="#0A2A48" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="1359" y="588" font-size="13" fill="#22D3EE" font-weight="bold" text-anchor="middle">Masked</text>
+<path d="M88.0 672 V664 H649.5 V672" fill="none" stroke="#5F87AD" stroke-width="2" stroke-linejoin="round"/>
+<text x="368.75" y="652" font-size="12" fill="#7FA6C9" font-weight="bold" text-anchor="middle" letter-spacing="1.4">BEFORE YOU PRESS ANYTHING</text>
+<path d="M778.0 672 V664 H1167.0 V672" fill="none" stroke="#5F87AD" stroke-width="2" stroke-linejoin="round"/>
+<text x="972.5" y="652" font-size="12" fill="#7FA6C9" font-weight="bold" text-anchor="middle" letter-spacing="1.4">LOCK DOWN FIRST</text>
+<path d="M1295.5 672 V664 H1512.0 V672" fill="none" stroke="#5F87AD" stroke-width="2" stroke-linejoin="round"/>
+<text x="1403.75" y="652" font-size="12" fill="#7FA6C9" font-weight="bold" text-anchor="middle" letter-spacing="1.4">WHILE THE DATA MOVES</text>
+<line x1="110.0" y1="705" x2="1490.0" y2="705" stroke="#22D3EE" stroke-opacity=".7" stroke-width="3" stroke-dasharray="9 8"/>
+<circle cx="110.0" cy="705" r="18" fill="#06172B" stroke="#22D3EE" stroke-width="3" filter="url(#glow)"/>
+<text x="110.0" y="711" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">1</text>
+<text x="110.0" y="752" font-size="15" fill="#fff" font-weight="bold" text-anchor="middle">Scope window</text>
+<text x="110.0" y="774" font-size="13" fill="#8FA6C4" font-weight="normal" text-anchor="middle">core vs aux, 12 months</text>
+<circle cx="282.5" cy="705" r="18" fill="#06172B" stroke="#22D3EE" stroke-width="3" filter="url(#glow)"/>
+<text x="282.5" y="711" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">2</text>
+<text x="282.5" y="752" font-size="15" fill="#fff" font-weight="bold" text-anchor="middle">Match solutions</text>
+<text x="282.5" y="774" font-size="13" fill="#8FA6C4" font-weight="normal" text-anchor="middle">versions and layers</text>
+<circle cx="455.0" cy="705" r="18" fill="#06172B" stroke="#22D3EE" stroke-width="3" filter="url(#glow)"/>
+<text x="455.0" y="711" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">3</text>
+<text x="455.0" y="752" font-size="15" fill="#fff" font-weight="bold" text-anchor="middle">Line up Azure</text>
+<text x="455.0" y="774" font-size="13" fill="#8FA6C4" font-weight="normal" text-anchor="middle">Key Vault, Blob, SQL</text>
+<circle cx="627.5" cy="705" r="18" fill="#06172B" stroke="#22D3EE" stroke-width="3" filter="url(#glow)"/>
+<text x="627.5" y="711" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">4</text>
+<text x="627.5" y="752" font-size="15" fill="#fff" font-weight="bold" text-anchor="middle">Virtual tables</text>
+<text x="627.5" y="774" font-size="13" fill="#8FA6C4" font-weight="normal" text-anchor="middle">repoint the data source</text>
+<circle cx="800.0" cy="705" r="18" fill="#06172B" stroke="#22D3EE" stroke-width="3" filter="url(#glow)"/>
+<text x="800.0" y="711" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">5</text>
+<text x="800.0" y="752" font-size="15" fill="#fff" font-weight="bold" text-anchor="middle">Lockdown endpoints</text>
+<text x="800.0" y="774" font-size="13" fill="#8FA6C4" font-weight="normal" text-anchor="middle">stub, lower env</text>
+<circle cx="972.5" cy="705" r="18" fill="#06172B" stroke="#22D3EE" stroke-width="3" filter="url(#glow)"/>
+<text x="972.5" y="711" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">6</text>
+<text x="972.5" y="752" font-size="15" fill="#fff" font-weight="bold" text-anchor="middle">Bypass custom logic</text>
+<text x="972.5" y="774" font-size="13" fill="#8FA6C4" font-weight="normal" text-anchor="middle">execution headers</text>
+<circle cx="1145.0" cy="705" r="18" fill="#06172B" stroke="#22D3EE" stroke-width="3" filter="url(#glow)"/>
+<text x="1145.0" y="711" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">7</text>
+<text x="1145.0" y="752" font-size="15" fill="#fff" font-weight="bold" text-anchor="middle">Disable timers</text>
+<text x="1145.0" y="774" font-size="13" fill="#8FA6C4" font-weight="normal" text-anchor="middle">avoid the window</text>
+<circle cx="1317.5" cy="705" r="18" fill="#06172B" stroke="#22D3EE" stroke-width="3" filter="url(#glow)"/>
+<text x="1317.5" y="711" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">8</text>
+<text x="1317.5" y="752" font-size="15" fill="#fff" font-weight="bold" text-anchor="middle">Preserve created-on</text>
+<text x="1317.5" y="774" font-size="13" fill="#8FA6C4" font-weight="normal" text-anchor="middle">overriddencreatedon</text>
+<text x="1317.5" y="792" font-size="13" fill="#8FA6C4" font-weight="normal" text-anchor="middle">+ source GUIDs</text>
+<circle cx="1490.0" cy="705" r="18" fill="#06172B" stroke="#22D3EE" stroke-width="3" filter="url(#glow)"/>
+<text x="1490.0" y="711" font-size="17" fill="#fff" font-weight="bold" text-anchor="middle">9</text>
+<text x="1490.0" y="752" font-size="15" fill="#fff" font-weight="bold" text-anchor="middle">Mask PII</text>
+<text x="1490.0" y="774" font-size="13" fill="#8FA6C4" font-weight="normal" text-anchor="middle">GDPR compliance</text>
+<rect x="480" y="838" width="640" height="40" rx="20.0" fill="#08203A" fill-opacity=".95" stroke="#22D3EE" stroke-width="2"/>
+<text x="800" y="864" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle" letter-spacing="0.5">CLONE DATAVERSE GUIDELINES. AUTHOR: AYA METWALLY</text>
+</svg>
