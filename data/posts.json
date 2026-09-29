@@ -34,7 +34,7 @@
 {
     "slug": "clone-dataverse-checklist",
     "title": "What to Expect When You're Expecting to Clone Dataverse",
-    "excerpt": A client asked for a copy of production 'for the last 12 months only'. Nine technical checks before you press copy, plus a document migration checklist.",
+    "excerpt": "A client asked for a copy of production 'for the last 12 months only'. Nine technical checks before you press copy, plus a document migration checklist.",
     "date": "Sept 2026",
     "tag": "ALM",
     "author": "Aya Metwally",
